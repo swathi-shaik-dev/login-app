@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/15113217/pexels-photo-15113217.jpeg?_gl=1*uet90z*_ga*MTQ2MzgxMTIzOC4xNzcyNjQzNzI1*_ga_8JE65Q40S6*czE3NzI2ODk2NjckbzIkZzEkdDE3NzI2ODk4MDYkajIyJGwwJGgw");
+  background-size: cover;
+}
+
+.title{
+  font-size: 30px;
+  color: rgb(219, 89, 133);
+  text-align: center;
+}
+
+.card{
+  border: 1px solid rgb(219, 89, 133);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+  margin: 20px;
+  background: white;
+}
+
+@media(min-width: 768px){
+  .card{
+    width: 30%;
+  }
+}
+
+label {
+  font-size: 18px;
+  color: rgb(219, 89, 133);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input{
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgb(219, 89, 133);
+  padding-left: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: transparent;
+  color: rgb(219, 89, 133);
+}
+
+.login-btn{
+  background: rgb(219, 89, 133);
   color: white;
+  padding: 10px 8px;
+  font-size: 15px;
+  align-self: center;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.error-msg{
+  font-size: 18px;
+  align-self: center;
+  color: red;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/15113217/pexels-photo-15113217.jpeg?_gl=1*uet90z*_ga*MTQ2MzgxMTIzOC4xNzcyNjQzNzI1*_ga_8JE65Q40S6*czE3NzI2ODk2NjckbzIkZzEkdDE3NzI2ODk4MDYkajIyJGwwJGgw");
+  background-size: cover;
 }
